@@ -96,6 +96,58 @@
         .portfolio-box:hover {
             transform: translateY(-5px);
         }
+        /* Gallery styling */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Lightbox styling */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 5px;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+        }
         
     </style>
 </head>
@@ -155,6 +207,18 @@
         <p>Here are some of my favorite things!</p>
         <!-- Add your projects here -->
     </section>
+
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <a href="#img1"><img src="image1.jpg" alt="Graphic Design"></a>
+        </div>
+
+        <!-- Lightbox for images -->
+        <div id="img1" class="lightbox">
+            <a href="#" class="lightbox-close">&times;</a>
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+        
     
 
     <section id="contact">
