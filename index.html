@@ -72,6 +72,48 @@
         footer p {
             margin: 0;
         }
+        /* Portfolio styling */
+        .portfolio-subsection {
+            margin-bottom: 40px;
+        }
+
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: #eee;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .carousel-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -98,6 +140,20 @@
     <section id="portfolio">
         <h2>Portfolio</h2>
         <p>Here are some of the projects I've worked on:</p>
+        <div class="portfolio-subsection">
+            <h3>Web Development</h3>
+            <div class="carousel">
+                <div class="carousel-track" id="carousel-track-web">
+                    <div class="carousel-item">Project 1</div>
+                    <div class="carousel-item">Project 2</div>
+                    <div class="carousel-item">Project 3</div>
+                </div>
+                <div class="carousel-buttons">
+                    <button class="carousel-button" onclick="slide('carousel-track-web', -1)">&#10094;</button>
+                    <button class="carousel-button" onclick="slide('carousel-track-web', 1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
         <!-- Add your projects here -->
     </section>
     <section id="hobbies">
