@@ -107,7 +107,7 @@
         .gallery img {
             width: 100%;
             height: auto;
-            border-radius: 5px;
+            border-radius: 20px;
             cursor: pointer;
             transition: transform 0.2s;
         }
@@ -176,25 +176,25 @@
         <h2>Portfolio</h2>
         <p>I am broadly interested in medical image analysis, computer vision, and machine learning. Here are some of the projects I've worked on:</p>
         <div class="portfolio-boxes">
-                <div class="portfolio-box">
-                    <h4></h4>Multi-site harmonization</h4>
-                </div>
-                <div class="portfolio-box">
-                    <h4>Stability & robustness in medical imaging</h4>
-                </div>
-                <div class="portfolio-box">
-                    <h4>Domain-aware learning</h4>
-                </div>
+            <div class="portfolio-box">
+                <h4>Multi-site harmonization</h4>
+            </div>
+            <div class="portfolio-box">
+                <h4>Stability & robustness in medical imaging</h4>
+            </div>
+            <div class="portfolio-box">
+                <h4>Domain-aware learning</h4>
+            </div>
                 
         </div>
         <h3>Multi-site harmonization</h3>
         <p>Diffusion-weighted MRI collected at different imaging sites or with different acquisition protocols exhibit systematic (and unwanted) differences. These differences block us from naively pooling diffusion-weighted images, or derivatives of them, together for joint analysis. I've made progress in "harmonizing" such data, or, making these data comparable between sites/acquisitions.</p>
-    `   <p>Nancy R. Newlin, Praitayini Kanakaraj, Thomas Li, Kimberly Pechman, Derek Archer, Angela Jefferson, Bennett Landman, Daniel Moyer, "Learning site-invariant features of connectomes to harmonize complex network measures," Proc. SPIE 12930, Medical Imaging 2024: Clinical and Biomedical Imaging, 129302E (2 April 2024); https://doi.org/10.1117/12.3009645</p>
+        <p>Nancy R. Newlin, Praitayini Kanakaraj, Thomas Li, Kimberly Pechman, Derek Archer, Angela Jefferson, Bennett Landman, Daniel Moyer, "Learning site-invariant features of connectomes to harmonize complex network measures," Proc. SPIE 12930, Medical Imaging 2024: Clinical and Biomedical Imaging, 129302E (2 April 2024); https://doi.org/10.1117/12.3009645</p>
         <p>Newlin NR, Cai LY, Yao T, Archer D, Pechman KR, Schilling KG, Jefferson A, Resnick SM, Hohman TJ, Shafer AT, Landman BA. Comparing voxel- and feature-wise harmonization of complex graph measures from multiple sites for structural brain network investigation of aging. Proc SPIE Int Soc Opt Eng. 2023 Feb;12464:124642B. doi: 10.1117/12.2653947. Epub 2023 Apr 3. PMID: 37123017; PMCID: PMC10139749. </p>
         <p>Nancy R. Newlin, Kurt Schilling, Serge Koudoro, Bramsh Qamar Chandio, Daniel Moyer, Claire E. Kelly, Sila Genc, Joseph Yuan-Mou Yang, Ye Wu, Nagesh Adluru, Vishwesh Nath, Sudhir Pathak, Walter Schneider, Anurag Gade, William Consagra, Yogesh Rathi, Tom Hendriks, Anna Vilanova, Maxime Chamberland, Tomasz Pieciak, Dominika Ciupek, Antonio Tristan Vega, Santiago Aja-Fernandez, Maciej Malawski, Gani Ouedraogo, Julia Machnio, Paul M. Thompson, Neda Jahanshad, Eleftherios Garyfallidis, Bennett Landman "Introducing QuantConn: Overcoming challenging diffusion acquisitions with harmonization", Accepted to CDMRI LNCS, July 2024 </p>
 
-        <h3>Stability & robustness in medical imaging<h3>
-        Along the same lines as multi-site harmonization, I have explored the stability and reproducibility models/structures derived from diffusion-weighted images. This includes tractography, connectomes, and graph-measures that summarize brain connectivity. How are these structures effected by the number of samples used to create whole-brain tractography models? 
+        <h3>Stability & robustness in medical imaging</h3>
+        <p>Along the same lines as multi-site harmonization, I have explored the stability and reproducibility models/structures derived from diffusion-weighted images. This includes tractography, connectomes, and graph-measures that summarize brain connectivity. How are these structures effected by the number of samples used to create whole-brain tractography models? </p>
         <p>Newlin NR, Rheault F, Schilling KG, Landman BA. Characterizing Streamline Count Invariant Graph Measures of Structural Connectomes. J Magn Reson Imaging. 2023 Oct;58(4):1211-1220. doi: 10.1002/jmri.28631. Epub 2023 Feb 24. PMID: 36840398; PMCID: PMC10447626.</p>
         
         <h3>Domain-aware learning</h3>
@@ -205,12 +205,9 @@
     <section id="hobbies">
         <h2>Hobbies</h2>
         <p>Here are some of my favorite things!</p>
-        <!-- Add your projects here -->
-    </section>
-
         <h2>Gallery</h2>
         <div class="gallery">
-            <a href="#img1"><img src="image1.jpg" alt="Graphic Design"></a>
+            <a href="#img1"><img src="image1.jpg" alt="Professional Social Media Content Creation"></a>
         </div>
 
         <!-- Lightbox for images -->
@@ -218,6 +215,37 @@
             <a href="#" class="lightbox-close">&times;</a>
             <img src="image1.jpg" alt="Image 1">
         </div>
+        <div class="gallery">
+            <a href="#img2"><img src="image2.jpg" alt="Graphic Design"></a>
+        </div>
+
+        <!-- Lightbox for images -->
+        <div id="img2" class="lightbox">
+            <a href="#" class="lightbox-close">&times;</a>
+            <img src="image2.jpg" alt="Graphic Design">
+        </div>
+        <div class="gallery">
+            <a href="#img3"><img src="image3.jpg" alt="My Dog"></a>
+        </div>
+
+        <!-- Lightbox for images -->
+        <div id="img3" class="lightbox">
+            <a href="#" class="lightbox-close">&times;</a>
+            <img src="image3.jpg" alt="Graphic Design">
+        </div>
+        <div class="gallery">
+            <a href="#img4"><img src="image3.jpg" alt="My Dog"></a>
+        </div>
+
+        <!-- Lightbox for images -->
+        <div id="img4" class="lightbox">
+            <a href="#" class="lightbox-close">&times;</a>
+            <img src="image4.jpg" alt="Graphic Design">
+        </div>
+        <!-- Add your projects here -->
+    </section>
+
+        
         
     
 
