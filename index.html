@@ -148,7 +148,45 @@
             font-size: 30px;
             text-decoration: none;
         }
+        #projects {
+          max-width: 900px;
+          margin: auto;
+        }
         
+        .project {
+          display: flex;
+          gap: 20px;
+          margin-bottom: 40px;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        
+        .project img {
+          width: 300px;
+          height: auto;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-description {
+          flex: 1;
+        }
+        
+        .project-description h3 {
+          margin-top: 0;
+        }
+        
+        .project-description a {
+          display: inline-block;
+          margin-top: 10px;
+          color: #0A66C2;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        
+        .project-description a:hover {
+          text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -198,6 +236,29 @@
         </ul>
 
         <!-- Add your projects here -->
+    </section>
+    <section id="projects" style="padding: 2rem;">
+      <h2>My Projects</h2>
+    
+      <div class="project">
+        <img src="image1.jpg" alt="Project 1 Screenshot">
+        <div class="project-description">
+          <h3>Project Title 1</h3>
+          <p>A short description of what this project does, what tech you used, and why it's cool or important. You can link to a paper, repo, or demo here.</p>
+          <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    
+      <div class="project">
+        <img src="image1.jpg" alt="Project 2 Screenshot">
+        <div class="project-description">
+          <h3>Project Title 2</h3>
+          <p>Another awesome project with a little blurb about the work and its impact or features.</p>
+          <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    
+      <!-- Add more .project blocks as needed -->
     </section>
     <section id="hobbies">
         <h2>Hobbies</h2>
